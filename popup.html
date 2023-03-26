@@ -1,33 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            width: 250px;
-            height: 500px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            color: white;
-            font-size: 30px;
-            background-color: red;
-        }
-    </style>
+  <title>Linkedin Posts Scraper</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
 </head>
-
 <body>
-    <div>
-        Hello NAME
+  <!-- <h1>Input and Button Example</h1>
+  <input type="number" id="inputField" placeholder="Number of posts you would like to scan">
+  <button id="submitButton">Submit</button> -->
+
+  <div class="container">
+    <div class="heading">
+      <img src="./images/icons8-linkedin-200.png" alt="Linkedin" height="48px" width="48px"/>
+      <h1>Post Scraper</h1>
     </div>
 
-    <script src="./popup_script.js"></script>
-</body>
+    <div id="content">
+    <p1>Enter the number of posts you would like to scan: </p1>
+    <form>
+      <input type="number" name="num-posts" id="inputField" placeholder="20" required min="1">
+      <button type="submit" class="submit-btn" id="submitButton">Submit</button>
+    </form>
+    </div>
 
+    <div id="loadingState" style="display: none">
+      Loading...
+    </div>
+  </div>
+    
+  </div>
+  <script src="./popup_script.js"></script>
+</body>
 </html>
